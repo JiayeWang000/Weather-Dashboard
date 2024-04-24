@@ -1,0 +1,126 @@
+
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background-color: #000000;
+    margin: 0;
+    padding-left: 10px;
+}
+
+nav .theme {
+    color: #ffffff !important;
+}
+
+nav .label {
+    color: rgb(179, 179, 179);
+    cursor: pointer;
+}
+
+#table-title {
+    margin: 10px 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 5px 0;
+    border-bottom: solid 0.25px grey;
+}
+
+.column1 {
+    flex: 1;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.column2 {
+    flex: 3;
+    text-align: center;
+}
+
+.column3 {
+    flex: 2;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.row:nth-child(2n) {
+    background-color: rgba(191, 188, 188, 0.409);
+}
+
+.row:nth-child(1) {
+    border-top: solid 0.25px gray;
+    font-weight: bold;
+}
+
+#layout {
+    display: flex;
+    flex-direction: row;
+    margin: auto 10px;
+}
+
+#table {
+    flex: 2;
+}
+
+#selection {
+    flex: 1;
+}
+
+#chart-div {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#selection {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.selector-div {
+    padding: 15px;
+}
+
+#selector1-div {
+    display: none;
+}
+
+#selector2-div {
+    display: none;
+}
+
+.selector {
+    width: 75%;
+}
+
+#statistics {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    #layout {
+        flex-direction: column;
+    }
+    
+    nav {
+        gap: 25px;
+    }
+}
